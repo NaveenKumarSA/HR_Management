@@ -1,0 +1,17 @@
+.sidenav {
+  width: 130px;
+  height:100%;
+  position: fixed;
+  line-height: 50px;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: black;
+  overflow-x: hidden;
+  padding: 8px 0;
+  text-decoration: 	none;
+  float: top; 
+}
+.navdiv{
+  padding : 2rem;
+}
