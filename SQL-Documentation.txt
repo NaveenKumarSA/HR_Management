@@ -1,0 +1,100 @@
+Documentation 
+
+//===============Executing connection with DB==================//
+
+<?php
+$host = 'localhost:3306';
+$user = 'root';
+$pass = '';
+
+$conn = mysqli_connect($host, $user, $pass);
+
+//====EXECUTING CONNECTION 
+if(! $conn ){
+die(' SORRY ! , could not connect: '.mysqli_error());
+}
+echo ' Connected Successfully<br>';
+if($conn)
+	echo "<br> Connection still exists";
+//====closing connection 
+mysqli_close($conn);
+//====checking the connection still exixts
+if(! $conn ){
+die(' SORRY ! , could not connect: '.mysqli_error());
+}
+echo ' Connected Successfully<br>';
+
+//====================Creating DB================//
+
+<?php
+$host = 'localhost:3306';
+$user = 'root';
+$pass = '';
+//====Executing connection 
+$conn = mysqli_connect($host, $user, $pass);
+if(! $conn ){
+	die('could not connect: '.mysqli_error());
+}else{
+	echo ' Connected Successfully';
+}
+//====creating db
+$sql = 'CREATE DATABASE SCHOOL_USERS';
+if(mysqli_query($conn, $sql)){
+echo 'Data base created successfully';
+}
+else{
+echo 'Data base not created successfully';
+}
+
+//=====closing connection 
+mysqli_close($conn);
+?>
+
+//=================Creating Table in db ===========//
+
+$createTable = "CREATE TABLE school_users_profile(
+sl_no INT AUTO_INCREMENT PRIMARY KEY,
+user_name VARCHAR(30)NOT NULL, 
+date_of_birth VARCHAR(20)NOT NULL,
+gender VARCHAR(20)NOT NULL,
+contact_option VARCHAR(20)NOT NULL,
+contact_details VARCHAR(20)NOT NULL,
+languages_known VARCHAR(20)NOT NULL,
+address VARCHAR(60)NOT NULL,
+)";
+if(mysqli_query($conn, $createTable)){
+echo 'Table created succesfully';
+}
+else{
+echo 'Oops table is not created succesfully';
+}
+//========================Insert into Table =============//
+<?php
+$host = 'localhost:3306';
+$user = 'root';
+$pass = '';
+$dbname= 'school_users';
+//====Executing connection 
+$conn = mysqli_connect($host, $user, $pass, $dbname);
+if(! $conn ){
+	die('could not connect: '.mysqli_error());
+}else{
+	echo ' Connected Successfully';
+}
+//=====Inserting into a table
+$sql = 'INSERT INTO school_users_profile
+(user_name,date_of_birth,gender,contact_option,contact_details,languages_known,address)
+ VALUES ("TestUser","2020-10-20","male","Phone","9890989098","tamil english","108, rajaji nagar, blr")';   
+if(mysqli_query($conn, $sql)){   
+ echo "Record inserted successfully";   
+}else{   
+echo "Could not insert record: ". mysqli_error($conn);   
+}  
+//=====closing the connection 
+mysqli_close($conn);
+?>
+
+
+
+
+
