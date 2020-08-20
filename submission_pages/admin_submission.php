@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php 
 // pulling data from the hrms db and checking weather the admin is loging in and employee is logging in 
 //session_start();
@@ -26,3 +27,14 @@
 
 		mysqli_close($conn);
  ?>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+</head>
+<body>
+ do you understand?
+</body>
+</html>
+>>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0

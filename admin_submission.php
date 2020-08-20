@@ -6,9 +6,12 @@
 		<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<<<<<<< HEAD
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+=======
+>>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -17,11 +20,16 @@
   	<link rel="stylesheet" type="text/css" href="styles2.css">
   	<style>
   		span : hover{
+<<<<<<< HEAD
   			background-color: white ;
+=======
+  			background-color: hotpink ;
+>>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
   		}
   	</style>
 </head>
 <body>
+<<<<<<< HEAD
 		<?php 
 // pulling data from the hrms db and checking weather the admin is loging in and employee is logging in 
 //session_start();
@@ -65,6 +73,27 @@
 			 			</td>
 			 			<td>			
 			 				<h1>Hello, <?= $adminName;?></h1>
+=======
+		<?php 	
+			if (isset($_POST['submit'])) {
+
+				echo "User Name is :".$_POST['admin_user'];	
+				echo "User password is :".$_POST['admin_password'];	
+			}
+			else{
+				echo " hey Piggie, how are you ?";
+			}
+		 ?>
+
+		 	<div class="jumbotron w-100 rounded border border-warning p-5 m-0">
+		 		<table>	
+			 		<tr>	
+			 			<td class="	text-align-center">
+			 				<img src="user_avatar.png" width="360px" height="200px">	
+			 			</td>
+			 			<td>			
+			 				<h1>Hello, <?= $_POST['admin_user'];?></h1>
+>>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
 			 			</td>
 			 		</tr>
 		 		</table>
@@ -74,6 +103,7 @@
 		 				<span  id="createAdminSnippet" onclick="createAdmin()" class="bg-warning rounded p-3 m-2 "><a class="text-dark" ><b>	CREATE ADMIN</b></a></span>
 		 			</div>
 		 			<div>	
+<<<<<<< HEAD
 
 
 		 				<span id="createAdminSnippet" onclick="createEmployee()"  class="bg-warning rounded p-3 m-2"><a class="text-dark" ><b>	CREATE EMPLOYEE</b></a></span>
@@ -83,14 +113,25 @@
 		 				
 		 			</div>
 		 			
+=======
+		 				<span id="createAdminSnippet" onclick="createAdmin()"  class="bg-warning rounded p-3 m-2"><a class="text-dark" ><b>	CREATE EMPLOYEE</b></a></span>
+		 			</div>
+		 			<div>	
+		 				<span id="createAdminSnippet" onclick="createAdmin()" class="bg-warning rounded p-3 m-2"><a class="text-dark"><b>	ATTENDENCE RECORD</b></a>	</span>
+		 			</div>
+>>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
 		 	</div>
 		 	<!-- divisor for creating admin  -->
 		 	 <div id="createAdminDiv" class="jumbotron w-100 rounded border border-warning p-5 m-0 text-align-center justify-content-center" style="display: none">
 		 	 		<h3 class="text-seccondary"> You can create administrator Here  </h3>
 		 	 	<div class="d-flex justify-content-center text-align-center bg-warning w-25 p-5" style="opacity: 0.7">
 		 	 		
+<<<<<<< HEAD
 
 		 	 		<form action="adminSubmissionPage.php" method="post">
+=======
+		 	 		<form action="" method="post">
+>>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
 						<label class="text-strong">ADMINISTRATOR USER NAME : </label><br>
 						<input required type="text" name="newAdminUser" id="newAdminUser"><br>
 						<label>NEW PASSWORD : </label><br>
@@ -101,6 +142,7 @@
 		 	 		</form>
 		 	 	</div>
 		 	 </div>
+<<<<<<< HEAD
 
 		 	 <!-- divisor for creating Employee,   in here i display a form to create employee and i store the details in the db employee table   -->
 		 	 <div id="createEmployeeDiv" class="jumbotron w-100 rounded border border-warning p-5 m-0 text-align-center justify-content-center" style="display: none">
@@ -217,6 +259,8 @@
 		 	 	</div>
 		 	 </div>
 
+=======
+>>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
 		 	 <!-- divisor for creating Employee  -->
 		 	 <div>
 		 	 	
@@ -225,16 +269,22 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
 		 	<!-- all Scripts  -->  
 
 		 	<script type="text/javascript">
 		 		//script for creating admin 
 
+<<<<<<< HEAD
 		 		 
 
 
 
+=======
+>>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
 		 		function createAdmin() {
 
 		 			var flag = document.getElementById('createAdminDiv');
@@ -246,6 +296,7 @@
 		 			}
 		 		}
 
+<<<<<<< HEAD
 		 		function createEmployee() {
 
 		 			var flag = document.getElementById('createEmployeeDiv');
@@ -269,6 +320,8 @@
 
 
 
+=======
+>>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
 
 		 	</script>
 		
