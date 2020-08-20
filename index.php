@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,11 +80,11 @@
 					<div id="error"></div>
 			</form>
 		</div>
-		<!-- Admin Login  -->	
+		<!-- Employee Login  -->	
 		<div class="container w-25 rounded border border-warning p-5 m-5">
 			<div class="text-align-center justify-content-center "> <h1 class="text-white">EMPLOYEE</h1></div>
 
-			<form action="employee_submission.php" method="post">
+			<form action="employee_profile.php" method="post">
 					<label class="	text-white">
 						User Name :
 					</label><br>	
@@ -98,12 +101,6 @@
 <!-- <div class="continer-fluid mh-100 mw-100 align-item-center justify-content-conter rounded-lg" style="background-image: url(	'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'); background-repeat: 	no-repeat;	background-repeat: 	background-size:cover; "	> <h1>	you </h1><h1>are	</h1><h1>	handsome !</h1>	</div> -->
 
 
-<<<<<<< HEAD
-	<?php  ?>
-
-
-=======
->>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
 
 </body>
 </html>
