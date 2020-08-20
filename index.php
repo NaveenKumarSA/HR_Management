@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,19 +80,11 @@
 					<div id="error"></div>
 			</form>
 		</div>
-<<<<<<< HEAD
 		<!-- Employee Login  -->	
 		<div class="container w-25 rounded border border-warning p-5 m-5">
 			<div class="text-align-center justify-content-center "> <h1 class="text-white">EMPLOYEE</h1></div>
 
 			<form action="employee_profile.php" method="post">
-=======
-		<!-- Admin Login  -->	
-		<div class="container w-25 rounded border border-warning p-5 m-5">
-			<div class="text-align-center justify-content-center "> <h1 class="text-white">EMPLOYEE</h1></div>
-
-			<form action="employee_submission.php" method="post">
->>>>>>> 3bcd881f7ba7176c56abb44aa746339241e1bbc0
 					<label class="	text-white">
 						User Name :
 					</label><br>	
@@ -104,7 +93,7 @@
 						Password :
 					</label><br>	
 					<input required type="password" name=" employee_password"><br>	
-					<button class=" rounded border-white bg-warning p-2 m-4 text-white  rounded text-align-center justify-content-center" type="	submit ">LOGIN</button>
+					<button class=" rounded border-white bg-warning p-2 m-4 text-white  rounded text-align-center justify-content-center" type="submit ">LOGIN</button>
 			</form>
 	</div>
 </div>
